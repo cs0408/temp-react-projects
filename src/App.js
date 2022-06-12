@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import "./App.css";
+import NotFound from "./components/NotFound";
+import Tabs from "./components/Tabs";
+import AddNewFieldOnButtonClick_1 from "./page-components/addNewFieldOnButtonClick_1/AddNewFieldOnButtonClick_1";
+import AddNewFieldOnButtonClick_2 from "./page-components/addNewFieldOnButtonClick_2/AddNewFieldOnButtonClick_2";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {window.location.pathname !== "/" && (
+          <div style={{ padding: "20px 0" }}>
+            <b>
+              <NavLink to="/">Home</NavLink>
+            </b>
+          </div>
+        )}
+        <Routes>
+          <Route path="/" element={<Tabs />} />
+          <Route
+            path="/add-new-field-on-button-click-1"
+            element={<AddNewFieldOnButtonClick_1 />}
+          />
+          <Route
+            path="/add-new-field-on-button-click-2"
+            element={<AddNewFieldOnButtonClick_2 />}
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
