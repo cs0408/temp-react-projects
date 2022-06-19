@@ -11,6 +11,27 @@ const Tabs = () => {
       type: "Add new field on button click - 2",
       link: "/add-new-field-on-button-click-2",
     },
+    {
+      type: "Analytics Dashboard - 1",
+      link: "/analytics-dashboard-1",
+    },
+    {
+      type: "Payment Template - 1",
+      link: "/payment-template-1",
+    },
+    {
+      type: "Payment Template - 2",
+      link: "/payment-template-2",
+    },
+    {
+      type: "Payment Template - 3",
+      link: "/payment-template-3",
+    },
+    {
+      type: "Shopify Components",
+      link: "/shopify-project",
+    },
+
   ];
   return (
     <div>

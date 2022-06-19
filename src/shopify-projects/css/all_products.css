@@ -1,0 +1,76 @@
+/* table body settings */
+.all-products-table-body
+  div:nth-child(1)
+  div:nth-child(2)
+  table
+  thead
+  tr
+  th:nth-child(1) {
+  width: 0px !important;
+}
+
+.all-products-table-body
+  div:nth-child(1)
+  div:nth-child(2)
+  table
+  thead
+  tr
+  th:nth-child(2) {
+  text-align: left;
+}
+
+.all-products-table-body div:nth-child(1) div:nth-child(2) table thead tr th {
+  text-align: center;
+}
+
+.all-products-table-body
+  div:nth-child(1)
+  div:nth-child(2)
+  table
+  tbody
+  tr
+  td:nth-child(2) {
+  text-align: left;
+}
+
+.all-products-table-body div:nth-child(1) div:nth-child(2) table tbody tr td {
+  text-align: center;
+}
+
+.all-products-table-body .Polaris-IndexTable__StickyTableHeader,
+.Polaris-IndexTable__StickyTableHeader--isSticky {
+  visibility: unset !important;
+}
+
+/* remove right border from variants table first column */
+.Polaris-DataTable__FixedFirstColumn.Polaris-DataTable--separate thead th {
+  border-right: unset !important;
+}
+
+/* for Data Table */
+.Polaris-DataTable__Cell--numeric {
+  text-align: left;
+}
+
+.Polaris-DataTable__FixedFirstColumn {
+  z-index: 100;
+}
+
+/* options card */
+/* .options-card div:last-child {
+  padding: 0 0 0 20px;
+} */
+.option-input-style {
+  display: flex;
+  align-items: center;
+}
+
+/* fixed input width */
+.input-150px-width {
+  width: 150px;
+}
+
+/* small button size */
+.small-button .Polaris-Button {
+  padding: 0 !important;
+}
